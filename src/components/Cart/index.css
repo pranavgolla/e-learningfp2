@@ -1,0 +1,210 @@
+/* Container for the cart page */
+.cart-page {
+    padding: 15px;
+    background-color: #FAEDCE; /* Light beige background */
+    min-height: 100vh; /* Full height */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  /* Header styling */
+  .cart-header {
+    margin-bottom: 20px;
+  }
+  
+  /* Heading */
+  .cart-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #1A3636; /* Dark teal text */
+    margin-bottom: 20px;
+  }
+  
+  /* Loading indicator */
+  .loading-indicator {
+    text-align: center;
+    font-size: 1rem;
+    color: #1A3636; /* Dark teal text */
+  }
+  
+  /* Cart content container */
+  .cart-content {
+    margin-top: 20px;
+  }
+  
+  /* Action buttons */
+  .cart-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .save-all-button,
+  .remove-all-button {
+    background-color: #CCD5AE; /* Light green background */
+    border: none;
+    border-radius: 4px;
+    color: #1A3636; /* Dark teal text */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.875rem; /* Smaller font size */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  .save-all-button:hover,
+  .remove-all-button:hover {
+    background-color: #E0E5B6; /* Light yellow background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Cart items list */
+  .cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Cart item styling */
+  .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #D6BD98; /* Light beige border */
+    background-color: #FEFAE0; /* Very light cream background */
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  .cart-item:hover {
+    background-color: #E0E5B6; /* Light yellow background on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+  }
+  
+  /* Product image */
+  .cart-item-image {
+    width: 100px; /* Increased size */
+    height: 100px; /* Increased size */
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s; /* Smooth transition */
+  }
+  
+  .cart-item-image:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Product details */
+  .cart-item-info {
+    margin-left: 15px;
+  }
+  
+  .cart-item-title {
+    margin: 0;
+    color: #1A3636; /* Dark teal text */
+  }
+  
+  .cart-item-brand {
+    margin: 0;
+    color: #677D6A; /* Sage green text */
+  }
+  
+  /* Quantity control */
+  .cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+  }
+  
+  .quantity-decrease,
+  .quantity-increase {
+    background-color: #E0E5B6; /* Light yellow background */
+    border: 1px solid #D6BD98; /* Light beige border */
+    border-radius: 4px;
+    color: #1A3636; /* Dark teal text */
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  .quantity-decrease:hover,
+  .quantity-increase:hover {
+    background-color: #CCD5AE; /* Light green background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .quantity-display {
+    margin: 0;
+    color: #1A3636; /* Dark teal text */
+  }
+  
+  /* Price and remove button section */
+  .cart-item-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+  }
+  
+  .cart-item-price {
+    margin: 0;
+    color: #40534C; /* Deep green text */
+  }
+  
+  .remove-item-button {
+    background-color: #D6BD98; /* Light beige background */
+    border: none;
+    border-radius: 4px;
+    color: #1A3636; /* Dark teal text */
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  .remove-item-button:hover {
+    background-color: #CCD5AE; /* Light green background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Cart summary */
+  .cart-summary {
+    margin-top: 20px;
+  }
+  
+  .order-total {
+    font-size: 1.125rem; /* Slightly larger font size */
+    font-weight: bold;
+    color: #40534C; /* Deep green text */
+  }
+  
+  .item-count {
+    font-size: 1rem;
+    color: #1A3636; /* Dark teal text */
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cart-actions {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .save-all-button,
+    .remove-all-button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cart-item {
+      font-size: 0.875rem; /* Smaller font size for mobile */
+    }
+  }
+  

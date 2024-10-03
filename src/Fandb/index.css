@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FAEDCE; /* Lightest color in the palette */
+    height: 100vh;
+    overflow: visible; /* Prevent scrollbars */
+  }
+  
+  /* Container Styles */
+  .c1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FEFAE0; /* Slightly darker background */
+    padding: 20px;
+  }
+  
+  /* Login Component Styles */
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #E0E5B6; /* A color from the palette */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-heading {
+    color: #1A3636; /* Darkest color from the palette */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    display: block;
+    color: #1A3636;
+    margin-bottom: 5px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #40534C; /* Medium color from the palette */
+    border-radius: 4px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .submit-button,
+  .login-button {
+    background-color: #677D6A; /* Slightly different green */
+    color: #FAEDCE;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-button:hover,
+  .login-button:hover {
+    background-color: #40534C; /* Darker green on hover */
+  }
+  
+  .login-button {
+    background-color: #D6BD98; /* Light brown */
+    color: #1A3636;
+  }
+  

@@ -1,0 +1,98 @@
+/* General Container */
+.login-container {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #FEFAE0; /* Light cream background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .login-heading {
+    text-align: center;
+    color: #1A3636; /* Dark teal text */
+    margin-bottom: 20px;
+  }
+  
+  /* Form */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label */
+  .form-label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #1A3636; /* Dark teal text */
+  }
+  
+  /* Input Fields */
+  .form-input {
+    padding: 10px;
+    border: 1px solid #D6BD98; /* Light beige border */
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #1A3636; /* Dark teal text */
+    background-color: #FEFAE0; /* Light cream background */
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  .form-input:focus {
+    border-color: #1A3636; /* Dark teal border on focus */
+    background-color: #E0E5B6; /* Light yellow background on focus */
+    outline: none;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  
+  /* Button Group */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Buttons */
+  .submit-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #1A3636; /* Dark teal background */
+    color: #FEFAE0; /* Light cream text */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #40534C; /* Dark green background on hover */
+  }
+  
+  .register-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #D6BD98; /* Light beige background */
+    color: #1A3636; /* Dark teal text */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .register-button:hover {
+    background-color: #BCC0A4; /* Slightly darker beige on hover */
+  }
+  
